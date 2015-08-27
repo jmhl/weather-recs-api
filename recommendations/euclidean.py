@@ -1,5 +1,5 @@
 from math import sqrt
-from recommendations import critics
+from critics import critics
 
 def sim_distance(prefs, p1, p2):
     '''
@@ -22,4 +22,4 @@ def sim_distance(prefs, p1, p2):
 
     return 1 / (1 + sum_of_squares)
 
-print(sim_distance(critics, 'Lisa Rose','Gene Seymour'))
+print sim_distance(critics, 'Lisa Rose','Gene Seymour')

@@ -1,5 +1,5 @@
 from math import sqrt
-from recommendations import critics
+from critics import critics
 
 def sim_pearson(prefs, p1, p2):
     '''
@@ -34,4 +34,4 @@ def sim_pearson(prefs, p1, p2):
 
     return coefficient
 
-print(sim_pearson(critics, 'Lisa Rose','Gene Seymour'))
+print sim_pearson(critics, 'Lisa Rose','Gene Seymour')

@@ -41,6 +41,9 @@ func WeatherHandler(rw http.ResponseWriter, request *http.Request) {
 	formattedJSON, err := json.MarshalIndent(f, "", "\t")
 	logAndPrintErr(err)
 
+	// Allow XOR
+	rw.Header().Set("Access-Control-Allow-Origin", "*")
+
 	rw.Write(formattedJSON)
 }
 

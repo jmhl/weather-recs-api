@@ -85,7 +85,7 @@ type Forecast struct {
     Flags     Flags		`json:"flags"`
 }
 
-func formatUrl(longitude string, latitude string) string {
+func formatUrl(latitude string, longitude string) string {
     return FORECAST + secrets.APIKEY() + "/" + latitude + "," + longitude
 }
 
